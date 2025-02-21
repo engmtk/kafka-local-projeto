@@ -1,6 +1,9 @@
 Projeto Kafka Local - Produtor e Consumidor
+Estava com umas duvidas sobre como atuar num projeto profissional e resolvi colocar a mão na massa gastando umas horas da madrugada fazendo essa brincadeira aqui, mais com o objetivo de aprender e aprofundar mais o conhecimento sobre construção, envio e consumo de informações via tópico Kafka. 
+
 Este projeto demonstra como configurar um ambiente Kafka local para enviar e consumir mensagens de forma simples e eficiente. A aplicação inclui um produtor que envia mensagens para três tópicos (classe, subclasse e estruturado) e um consumidor que lê e processa essas mensagens.
- Índice
+
+Índice
 1.	Visão Geral
 2.	Pré-requisitos
 3.	Instalação e Configuração
@@ -8,17 +11,13 @@ Este projeto demonstra como configurar um ambiente Kafka local para enviar e con
 5.	Execução
 6.	Exemplo de Mensagem
 7.	Resultados Esperados
-8.	Contribuições
 
 Visão Geral
 
 Este projeto tem como objetivo:
-
-•	Enviar mensagens Kafka para múltiplos tópicos (classe, subclasse e estruturado).
-
-•	Consumir as mensagens enviadas e exibir os dados processados.
-
-•	Monitorar a quantidade de mensagens enviadas, recebidas e a taxa de processamento.
+Enviar mensagens Kafka para múltiplos tópicos (classe, subclasse e estruturado).
+Consumir as mensagens enviadas e exibir os dados processados.
+Monitorar a quantidade de mensagens enviadas, recebidas e a taxa de processamento.
 
 As mensagens contêm dados como ID, nome do cliente, valor investido, tipo de ativo e outras informações relevantes para o cenário de investimento.
 
@@ -27,24 +26,20 @@ Pré-requisitos
 Antes de iniciar, certifique-se de ter instalado em seu ambiente local:
 
 1.	Python 3.10+ – Instalar Python
-
 2.	Kafka Local – Apache Kafka
-
 3.	Bibliotecas Python:
 
 pip install kafka-python
-
 Instalação e Configuração
 
 1.	Clone o Repositório:
 
 git clone https://github.com/seu-usuario/kafka-local-projeto.git
+
 cd kafka-local-projeto
 
 2.	Inicie o Kafka Local:
-
 Se estiver usando Kafka instalado localmente:
-
 Suba o Zookeeper e o Kafka
 
 bin/zookeeper-server-start.sh config/zookeeper.properties
@@ -62,7 +57,6 @@ kafka-local-projeto/
 ├── consumidor.py    # Lê as mensagens dos tópicos
 ├── README.md        # Documentação do projeto
 └── requirements.txt # Dependências do projeto
-________________________________________
 
 Execução
 1.	Iniciar o Produtor:
@@ -72,7 +66,7 @@ python consumidor.py
 3.	Monitorar os Tópicos:
 bin/kafka-console-consumer.sh --topic classe --bootstrap-server localhost:9092 --from-beginning
 
- Exemplo de Mensagem
+Exemplo de Mensagem
 O produtor envia mensagens com a seguinte estrutura JSON:
 {
   "id": "msg_1",
