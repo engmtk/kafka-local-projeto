@@ -3,15 +3,6 @@ Estava com umas duvidas sobre como atuar num projeto profissional e resolvi colo
 
 Este projeto demonstra como configurar um ambiente Kafka local para enviar e consumir mensagens de forma simples e eficiente. A aplicação inclui um produtor que envia mensagens para três tópicos (classe, subclasse e estruturado) e um consumidor que lê e processa essas mensagens.
 
-Índice
-1.	Visão Geral
-2.	Pré-requisitos
-3.	Instalação e Configuração
-4.	Estrutura do Projeto
-5.	Execução
-6.	Exemplo de Mensagem
-7.	Resultados Esperados
-
 Visão Geral
 
 Este projeto tem como objetivo:
