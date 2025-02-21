@@ -43,22 +43,20 @@ cd kafka-local-projeto
 
 2.	Inicie o Kafka Local:
 
-•	Se estiver usando Kafka instalado localmente:
+Se estiver usando Kafka instalado localmente:
 
-# Suba o Zookeeper e o Kafka
+Suba o Zookeeper e o Kafka
 
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
 bin/kafka-server-start.sh config/server.properties
 
 3.	Crie os tópicos:
-
 bin/kafka-topics.sh --create --topic classe --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 bin/kafka-topics.sh --create --topic subclasse --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 bin/kafka-topics.sh --create --topic estruturado --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 
 Estrutura do Projeto
-
 kafka-local-projeto/
 ├── produtor.py      # Envia mensagens para os tópicos
 ├── consumidor.py    # Lê as mensagens dos tópicos
